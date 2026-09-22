@@ -337,7 +337,7 @@ function vEdit(){
   return `<div class="top"><h1>${d.isNew?'Novo orçamento':'Editar '+label(d)}</h1></div>
   <section class="card"><h3>Cliente</h3>
     ${fld('Nome','cliente.nome',d.cliente.nome,'text','placeholder="Nome do cliente"')}
-    ${fld('Telefone / WhatsApp','cliente.fone',d.cliente.fone,'tel','inputmode="tel" placeholder="(67) 90000-0000" maxlength="15"')}
+    ${fld('Telefone / WhatsApp','cliente.fone',d.cliente.fone,'tel','inputmode="tel" placeholder="(00) 00000-0000" maxlength="15"')}
   </section>
   <section class="card"><h3>Veículo</h3>
     <div class="grid2">${fld('Modelo','veiculo.modelo',d.veiculo.modelo,'text','placeholder="Ex.: Corolla 2020"')}${fld('Placa','veiculo.placa',d.veiculo.placa,'text','autocapitalize="characters" maxlength="8"')}</div>
